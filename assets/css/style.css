@@ -10,7 +10,10 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
+
+/* HEADER */
 
 a, h2 {
     color: #fff;
@@ -50,16 +53,12 @@ a:hover {
     margin-left:32px;
 }
 
-
+/* MAIN CONTENT */
 
 section{
     width: 100%;
     min-width: 100vh;
-    background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 section h1 {
@@ -68,22 +67,19 @@ section h1 {
 }
 
 section:nth-of-type(1){
-    background-image: url("./img/home.jpg");
-    background-position: no-repeat center center;
+    background-image: url("../img/home.jpg");
     background-size: cover;
     height: 100vh;
 }
 
 section:nth-of-type(2){
-    background-image: url("./img/about.jpg");
-    background-position: no-repeat center center;
+    background-image: url("../img/about.jpg");
     background-size: cover;
     height: 100vh;
 }
 
 section:nth-of-type(3){
-    background-image: url("./img/projects.jpg");
-    background-position: no-repeat center center;
+    background-image: url("../img/projects.jpg");
     background-size: cover;
     height: 100vh;
 }
@@ -99,11 +95,11 @@ section:nth-of-type(3){
 
 
 .grid-template-columns{
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 350px 350px;
 }
 
 .item{
-    background: rgba(244, 244, 244, 0.37);
+    background: rgba(244, 244, 244, 0.884);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 9.5px );
@@ -117,3 +113,18 @@ section:nth-of-type(3){
     font-size: 15px;
     margin: 5px;
 }
+
+
+#projects_logo_large{
+    width: 120px;
+    height: 120px;
+    margin: 35px;
+}
+
+#itemId{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: large;
+    margin-top: 10px;
+}
+
